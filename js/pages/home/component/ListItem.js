@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 5,
         borderWidth: 1 / PixelRatio.get(),
-        borderColor: Color.HomeTitle
+        borderColor: Color.imgBorderColor
     },
     title: {
         color: Color.HomeTitle,

@@ -12,7 +12,7 @@ export default class AuthLoadingScreen extends Component {
     }
     // Fetch the token from storage then navigate to our appropriate place
     _bootstrapAsync = async () => {
-        const token = true;
+        const token = false;
         // This will switch to the App screen or Auth screen and this loading
         // screen will be unmounted and thrown away.
         setTimeout(() => {

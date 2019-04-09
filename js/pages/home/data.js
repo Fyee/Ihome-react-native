@@ -28,7 +28,7 @@ export const CardItemData = [
 export const ListItemData = [
     {
         id: '1',
-        img: `${BaseUrl}/product_img/gateway/mijia.png`,
+        img: `${BaseUrl}/product_img/gateway/mijia.jpeg`,
         name: '米家多功能网关',
         status: 1,
         alert: true,
@@ -36,7 +36,7 @@ export const ListItemData = [
     },
     {
         id: '2',
-        img: `${BaseUrl}/product_img/gateway/aqara.png`,
+        img: `${BaseUrl}/product_img/gateway/aqara.jpeg`,
         name: 'Aqara网关',
         status: 1,
         alert: false,
@@ -44,7 +44,7 @@ export const ListItemData = [
     },
     {
         id: '3',
-        img: `${BaseUrl}/product_img/sensor/aqara_switch.png`,
+        img: `${BaseUrl}/product_img/power_swich/aqara_wifi_swich.jpeg`,
         name: 'Aqara无线开关（升级版）',
         status: 1,
         alert: true,
@@ -52,7 +52,7 @@ export const ListItemData = [
     },
     {
         id: '4',
-        img: `${BaseUrl}/product_img/sensor/Aqara_water.png`,
+        img: `${BaseUrl}/product_img/sensor/Aqara_water.jpeg`,
         name: 'Aqara水浸传感器',
         status: 2,
         alert: false,
@@ -60,7 +60,7 @@ export const ListItemData = [
     },
     {
         id: '5',
-        img: `${BaseUrl}/product_img/sensor/co.png`,
+        img: `${BaseUrl}/product_img/sensor/co.jpeg`,
         name: '天然气报警器',
         status: 1,
         alert: true,
@@ -68,7 +68,7 @@ export const ListItemData = [
     },
     {
         id: '6',
-        img: `${BaseUrl}/product_img/sensor/smoke.png`,
+        img: `${BaseUrl}/product_img/sensor/smoke.jpeg`,
         name: '烟雾报警器',
         status: 1,
         alert: false,
