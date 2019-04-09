@@ -1,0 +1,34 @@
+{
+  "name": "ihome_v3",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "native-base": "^2.12.1",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-elements": "^1.1.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-progress": "^3.6.0",
+    "react-native-swiper": "^1.5.14",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-video": "^4.4.1",
+    "react-native-video-controls": "^2.2.3",
+    "react-navigation": "^3.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
