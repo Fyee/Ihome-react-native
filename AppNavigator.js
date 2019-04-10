@@ -9,6 +9,7 @@ import Color from './js/common/const/Color';
 import AddDevice from './js/pages/home/add_device'
 import DeviceOperation from './js/pages/home/add_device/DeviceOperation'
 import DeviceInfo from './js/pages/home/device_info'
+import Setting from './js/pages/my/setting'
 const Tabs = {
     Home: {
         screen: Home,
@@ -62,6 +63,7 @@ const HomeStack = createStackNavigator(
         AddDevice,
         DeviceOperation,
         DeviceInfo,
+        Setting
     }, {
         defaultNavigationOptions: {
             header: null

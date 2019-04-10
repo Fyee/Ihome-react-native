@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, StyleSheet, PixelRatio } from 'react-native'
+import { View, Image, StyleSheet, PixelRatio, TouchableOpacity } from 'react-native'
 import { ListItem } from 'react-native-elements'
 export default ListMenu = (props) => {
     return (
@@ -19,6 +19,7 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                Component={TouchableOpacity}
             />
             <ListItem
                 leftAvatar={
@@ -35,6 +36,7 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                Component={TouchableOpacity}
             />
             <ListItem
                 leftAvatar={
@@ -51,6 +53,7 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                Component={TouchableOpacity}
             />
             <ListItem
                 leftAvatar={
@@ -67,6 +70,7 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                Component={TouchableOpacity}
             />
             <ListItem
                 leftAvatar={
@@ -83,6 +87,7 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                Component={TouchableOpacity}
             />
             <ListItem
                 leftAvatar={
@@ -99,6 +104,12 @@ export default ListMenu = (props) => {
                     />
                 }
                 containerStyle={styles.containerStyle}
+                onPress={
+                    () => {
+                        props.navigation.navigate('Setting');
+                    }
+                }
+                Component={TouchableOpacity}
             />
         </View>
     )

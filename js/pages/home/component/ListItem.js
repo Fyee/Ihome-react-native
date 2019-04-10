@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Switch, Text, PixelRatio, StyleSheet, TouchableWithoutFeedback } from 'react-native'
+import { View, Image, Switch, Text, PixelRatio, StyleSheet, TouchableOpacity } from 'react-native'
 import { ListItem } from 'react-native-elements'
 import Color from '../../../common/const/Color';
 
@@ -7,7 +7,7 @@ export default MyListItem = (props) => {
     const { id, name, img, status, alert, type } = props.data
     return (
         <ListItem
-            Component={TouchableWithoutFeedback}
+            Component={TouchableOpacity}
             title={
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <Text style={styles.title}>{name}</Text>
