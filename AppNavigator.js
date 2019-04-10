@@ -61,7 +61,7 @@ const HomeStack = createStackNavigator(
         BottomTabs,
         AddDevice,
         DeviceOperation,
-        DeviceInfo
+        DeviceInfo,
     }, {
         defaultNavigationOptions: {
             header: null

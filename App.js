@@ -2,9 +2,13 @@ import { createSwitchNavigator, createStackNavigator, createAppContainer } from 
 import AuthLoadingScreen from './AuthLoadingScreen'
 import HomeStack from './AppNavigator'
 import Login from './js/pages/auth/Login'
+import Register from './js/pages/auth/Register'
+import ForgotPwd from './js/pages/auth/ForgotPwd'
 const AuthStack = createStackNavigator(
   {
     Login,
+    Register,
+    ForgotPwd
   },
   {
     defaultNavigationOptions: {

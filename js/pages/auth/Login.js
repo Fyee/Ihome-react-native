@@ -45,10 +45,20 @@ class Login extends React.Component {
                     secureTextEntry={true}
                 />
                 <View style={{ flexDirection: 'row', marginTop: 20 }}>
-                    <TouchableOpacity style={{ flex: 1 }}>
+                    <TouchableOpacity style={{ flex: 1 }}
+                        onPress={() => {
+                            this.props.navigation.navigate('Register')
+                        }}
+                    >
                         <Text style={{ textAlign: 'left', marginLeft: 10, color: '#fff', fontSize: 12 }}>注册账户</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{ flex: 1 }}>
+                    <TouchableOpacity style={{ flex: 1 }}
+                        onPress={
+                            () => {
+                                this.props.navigation.navigate('ForgotPwd')
+                            }
+                        }
+                    >
                         <Text style={{ textAlign: 'right', marginRight: 10, color: '#fff', fontSize: 12 }}>忘记密码</Text>
                     </TouchableOpacity>
                 </View>
