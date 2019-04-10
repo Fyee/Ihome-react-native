@@ -36,8 +36,8 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <Fragment>
+                <StatusBar barStyle='dark-content' />
                 <SafeAreaView style={{ flex: 0, backgroundColor: Color.HomeBackgroundColor }} />
-                <StatusBar barStyle='light-content' />
                 <SafeAreaView style={styles.container}>
                     <FlatList
                         data={ListItemData}

@@ -1,16 +1,28 @@
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import React, { Component, Fragment } from 'react'
+import { View, Text, SafeAreaView, Image, StatusBar, ScrollView } from 'react-native'
+import { ListItem } from 'react-native-elements'
+import DividingLine from '../../common/component/DividingLine';
+import Header from './component/Header'
+import ToolBar from './component/ToolBar'
+import ListMenu from './component/ListMenu'
 export default class MyScreen extends Component {
     constructor(props) {
         super(props)
     }
     render() {
         return (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>
-                    MyScreen
-                </Text>
-            </View>
+            <Fragment>
+                <StatusBar barStyle='dark-content' />
+                <SafeAreaView style={{ flex: 1 }}>
+                    <ScrollView>
+                        <Header />
+                        <DividingLine style={{ height: 10, color: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
+                        <ToolBar />
+                        <DividingLine style={{ height: 10, color: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
+                        <ListMenu />
+                    </ScrollView>
+                </SafeAreaView>
+            </Fragment>
         )
     }
 }

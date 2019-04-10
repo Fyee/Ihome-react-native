@@ -45,7 +45,7 @@ export const ListItemData = [
     {
         id: '3',
         img: `${BaseUrl}/product_img/power_swich/aqara_wifi_swich.jpeg`,
-        name: 'Aqara无线开关（升级版）',
+        name: 'Aqara无线开关',
         status: 1,
         alert: true,
         type: 3
