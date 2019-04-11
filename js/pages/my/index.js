@@ -16,9 +16,9 @@ export default class MyScreen extends Component {
                 <SafeAreaView style={{ flex: 1 }}>
                     <ScrollView>
                         <Header />
-                        <DividingLine style={{ height: 10, color: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
+                        <DividingLine style={{ height: 10, backgroundColor: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
                         <ToolBar />
-                        <DividingLine style={{ height: 10, color: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
+                        <DividingLine style={{ height: 10, backgroundColor: '#f4f3f3', borderWidth: 1, borderColor: '#dfdfdf' }} />
                         <ListMenu navigation={this.props.navigation} />
                     </ScrollView>
                 </SafeAreaView>

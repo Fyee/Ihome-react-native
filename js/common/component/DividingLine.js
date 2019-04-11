@@ -1,18 +1,21 @@
 import React from 'react'
-import { View, PixelRatio } from 'react-native'
+import { View, PixelRatio, Text } from 'react-native'
 export default DividingLine = (props) => {
-    const { height, color, borderColor, borderWidth } = props.style
+    const { height, backgroundColor, borderColor, borderWidth } = props.style
     return (
         <View
             style={
                 {
                     height,
-                    backgroundColor: color,
+                    backgroundColor,
                     borderBottomWidth: borderWidth / PixelRatio.get(),
                     borderTopWidth: borderWidth / PixelRatio.get(),
-                    borderColor
+                    borderColor,
+                    justifyContent: 'center'
                 }
             }
-        />
+        >
+            <Text style={props.titleStyle}>{props.title}</Text>
+        </View>
     )
 }
