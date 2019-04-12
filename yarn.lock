@@ -5192,6 +5192,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-native-circular-progress@^1.1.0:
+  version "1.1.0"
+  resolved "http://r.cnpmjs.org/react-native-circular-progress/download/react-native-circular-progress-1.1.0.tgz#5cb3efe570796226c59bf15a35250fb8b0d45025"
+  integrity sha1-XLPv5XB5YibFm/FaNSUPuLDUUCU=
+  dependencies:
+    prop-types "^15.6.2"
+
 react-native-drawer@2.5.1:
   version "2.5.1"
   resolved "http://registry.npm.taobao.org/react-native-drawer/download/react-native-drawer-2.5.1.tgz#08b9314184f48c724f1b467f8859797369798654"
@@ -5244,7 +5251,7 @@ react-native-keyboard-aware-scroll-view@0.8.0:
 
 react-native-progress@^3.6.0:
   version "3.6.0"
-  resolved "http://registry.npm.taobao.org/react-native-progress/download/react-native-progress-3.6.0.tgz#feaf37491f91bb421207fd761e20cb7258a2a3a6"
+  resolved "http://r.cnpmjs.org/react-native-progress/download/react-native-progress-3.6.0.tgz#feaf37491f91bb421207fd761e20cb7258a2a3a6"
   integrity sha1-/q83SR+Ru0ISB/12HiDLcliio6Y=
   dependencies:
     prop-types "^15.7.2"
@@ -5276,7 +5283,7 @@ react-native-status-bar-height@^2.2.0:
 
 react-native-svg@^9.3.7:
   version "9.3.7"
-  resolved "http://registry.npm.taobao.org/react-native-svg/download/react-native-svg-9.3.7.tgz#00f72f6105177e93bf0cb56bd0d1339db9b6649f"
+  resolved "http://r.cnpmjs.org/react-native-svg/download/react-native-svg-9.3.7.tgz#00f72f6105177e93bf0cb56bd0d1339db9b6649f"
   integrity sha1-APcvYQUXfpO/DLVr0NEznbm2ZJ8=
 
 react-native-swiper@^1.5.14:
