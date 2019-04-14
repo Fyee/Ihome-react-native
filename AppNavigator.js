@@ -14,13 +14,13 @@ const Tabs = {
     Home: {
         screen: Home,
         navigationOptions: {
-            tabBarLabel: '米家',
+            tabBarLabel: '首页',
         }
     },
     Mall: {
         screen: Mall,
         navigationOptions: {
-            tabBarLabel: '有品',
+            tabBarLabel: '数据',
         }
     },
     Intelligent: {
@@ -43,7 +43,7 @@ const BottomTabs = createBottomTabNavigator(Tabs, {
             if (routeName === 'Home') {
                 return <Image source={require('./js/assets/icon/navigator/Home.png')} style={{ width: 25, height: 25, tintColor }} />
             } else if (routeName === 'Mall') {
-                return <Image source={require('./js/assets/icon/navigator/Mall.png')} style={{ width: 25, height: 25, tintColor }} />
+                return <Image source={require('./js/assets/icon/navigator/data.png')} style={{ width: 25, height: 25, tintColor }} />
             } else if (routeName === 'Intelligent') {
                 return <Image source={require('./js/assets/icon/navigator/Intelligent.png')} style={{ width: 25, height: 25, tintColor }} />
             } else if (routeName === 'My') {

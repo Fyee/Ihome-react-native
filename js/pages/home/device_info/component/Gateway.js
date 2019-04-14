@@ -84,18 +84,18 @@ export default class GateWay extends Component {
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                         <AnimatedCircularProgress
                             size={120}
-                            width={15}
+                            width={10}
                             fill={60}
-                            tintColor="#257aa6"
+                            tintColor="#5ca0d3"
                             onAnimationComplete={() => console.log('onAnimationComplete')}
-                            backgroundColor="#183661" >
+                            backgroundColor="#33313b" >
                             {
                                 (fill) => (
                                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                                        <Text style={{ fontSize: 12, color: '#333' }}>
+                                        <Text style={{ fontSize: 10, color: '#333' }}>
                                             已连接设备数
                                                     </Text>
-                                        <Text style={{ fontSize: 12, color: '#333' }}>
+                                        <Text style={{ fontSize: 24, color: '#333', marginTop: 10 }}>
                                             3
                                                     </Text>
                                     </View>
