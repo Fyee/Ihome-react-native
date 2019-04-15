@@ -2,10 +2,10 @@ import React from 'react'
 import { Image } from 'react-native'
 import { createBottomTabNavigator, createStackNavigator, } from 'react-navigation'
 import Home from './js/navigator/Home'
-import Mall from './js/navigator/Mall'
+import Data from './js/navigator/Data'
 import Intelligent from './js/navigator/Intelligent'
 import My from './js/navigator/My'
-import Color from './js/common/const/Color';
+import Color from './js/common/const/Color'
 import AddDevice from './js/pages/home/add_device'
 import DeviceOperation from './js/pages/home/add_device/DeviceOperation'
 import DeviceInfo from './js/pages/home/device_info'
@@ -17,8 +17,8 @@ const Tabs = {
             tabBarLabel: '首页',
         }
     },
-    Mall: {
-        screen: Mall,
+    Data: {
+        screen: Data,
         navigationOptions: {
             tabBarLabel: '数据',
         }
@@ -42,7 +42,7 @@ const BottomTabs = createBottomTabNavigator(Tabs, {
             const { routeName } = navigation.state
             if (routeName === 'Home') {
                 return <Image source={require('./js/assets/icon/navigator/Home.png')} style={{ width: 25, height: 25, tintColor }} />
-            } else if (routeName === 'Mall') {
+            } else if (routeName === 'Data') {
                 return <Image source={require('./js/assets/icon/navigator/data.png')} style={{ width: 25, height: 25, tintColor }} />
             } else if (routeName === 'Intelligent') {
                 return <Image source={require('./js/assets/icon/navigator/Intelligent.png')} style={{ width: 25, height: 25, tintColor }} />

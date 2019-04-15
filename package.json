@@ -15,6 +15,7 @@
     "react-native-circular-progress": "^1.1.0",
     "react-native-elements": "^1.1.0",
     "react-native-gesture-handler": "^1.1.0",
+    "react-native-linear-gradient": "^2.5.4",
     "react-native-progress": "^3.6.0",
     "react-native-svg": "^9.3.7",
     "react-native-swiper": "^1.5.14",
