@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         shadowColor: '#333',
         shadowOpacity: 0.5,
-        shadowOffset: { height: 3 }
+        shadowOffset: { height: 3 },
+        elevation: 5
     },
     leftContainer: {
         flex: 1,

@@ -7,6 +7,12 @@ import Health from './component/health'
 export default class DataScreen extends Component {
     constructor(props) {
         super(props)
+        this.initState()
+    }
+    initState() {
+        this.state = {
+            backgroundColor: '#09263B'
+        }
     }
     render() {
         return (
@@ -17,7 +23,7 @@ export default class DataScreen extends Component {
                         <Text style={{ color: '#fff', fontSize: 16 }}>数据</Text>
                     }
                     headerStyle={{
-                        backgroundColor: '#3D4957'
+                        backgroundColor: this.state.backgroundColor
                     }}
                 />
                 <Tabs
@@ -25,9 +31,21 @@ export default class DataScreen extends Component {
                         height: 2 / PixelRatio.get(),
                         backgroundColor: '#48e0e4'
                     }}
+                    onChangeTab={(tab) => {
+                        if (tab.i === 0) {
+                            this.setState({
+                                backgroundColor: '#09263B'
+                            })
+                        }
+                        if (tab.i === 1) {
+                            this.setState({
+                                backgroundColor: '#3B2860'
+                            })
+                        }
+                    }}
                 >
                     <Tab heading="环境"
-                        tabStyle={styles.leftTabStyle}
+                        tabStyle={{ ...styles.leftTabStyle, backgroundColor: this.state.backgroundColor }}
                         activeTabStyle={styles.leftActiveTabStyle}
                         textStyle={{ color: '#fff' }}
                         activeTextStyle={{ color: '#48e0e4' }}
@@ -35,10 +53,10 @@ export default class DataScreen extends Component {
                         <Env />
                     </Tab>
                     <Tab heading="健康"
-                        tabStyle={styles.rightTabStyle}
+                        tabStyle={{ ...styles.rightTabStyle, backgroundColor: this.state.backgroundColor }}
                         activeTabStyle={styles.rightActiveStyle}
                         textStyle={{ color: '#fff' }}
-                        activeTextStyle={{ color: '#48e0e4' }}
+                        activeTextStyle={{ color: '#96dae4' }}
                     >
                         <Health />
                     </Tab>
@@ -52,22 +70,20 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1 / PixelRatio.get(),
         borderRightWidth: 1 / PixelRatio.get(),
         borderColor: '#fff',
-        backgroundColor: '#3D4957'
     },
     leftActiveTabStyle: {
         borderBottomWidth: 1 / PixelRatio.get(),
         borderRightWidth: 1 / PixelRatio.get(),
         borderColor: '#fff',
-        backgroundColor: '#606470'
+        backgroundColor: '#09263B'
     },
     rightTabStyle: {
         borderBottomWidth: 1 / PixelRatio.get(),
         borderColor: '#fff',
-        backgroundColor: '#3D4957'
     },
     rightActiveStyle: {
         borderBottomWidth: 1 / PixelRatio.get(),
         borderColor: '#fff',
-        backgroundColor: '#606470'
+        backgroundColor: '#3B2860'
     }
 })

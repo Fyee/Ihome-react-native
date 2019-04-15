@@ -42,7 +42,7 @@ const data = [
 ]
 export default Environment = (props) => {
     return (
-        <ScrollView style={{ flex: 1, backgroundColor: '#3D4957' }}>
+        <ScrollView style={{ flex: 1, backgroundColor: '#09263B' }}>
             <View style={{ margin: 10, height: 200, backgroundColor: '#0B304A' }}>
                 <Bar icon={temprature} backgroundColor='#218891' title='温度' />
                 {data.map((item) => {
@@ -56,7 +56,7 @@ export default Environment = (props) => {
                 })}
             </View>
             <View style={{ marginHorizontal: 10, height: 200, backgroundColor: '#0B304A' }}>
-                <Bar icon={air} backgroundColor='#e0bb20' title='空气' />
+                <Bar icon={air} backgroundColor='#6b8c42' title='空气' />
                 <View style={{ flexDirection: 'row', flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                         <AnimatedCircularProgress
@@ -64,9 +64,9 @@ export default Environment = (props) => {
                             size={100}
                             width={10}
                             fill={80}
-                            tintColor="#843b62"
+                            tintColor="#6f0765"
                             onAnimationComplete={() => console.log('onAnimationComplete')}
-                            backgroundColor="#33313b" >
+                            backgroundColor="#4c0045" >
                             {
                                 (fill) => (
                                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -88,9 +88,9 @@ export default Environment = (props) => {
                             size={100}
                             width={10}
                             fill={20}
-                            tintColor="#b6f7c1"
+                            tintColor="#15cda8"
                             onAnimationComplete={() => console.log('onAnimationComplete')}
-                            backgroundColor="#33313b" >
+                            backgroundColor="#01676b" >
                             {
                                 (fill) => (
                                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>

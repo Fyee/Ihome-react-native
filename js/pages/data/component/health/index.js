@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, } from 'react-native'
 import { VictoryLine } from 'victory-native'
 import LinearGradient from 'react-native-linear-gradient'
 import { ListItem } from 'react-native-elements'
 import { AnimatedCircularProgress } from 'react-native-circular-progress'
 export default Health = (props) => {
     return (
-        <Fragment>
-            <LinearGradient style={{ flex: 1, backgroundColor: '#3D4957', paddingBottom: 10 }} colors={['#3B2860', '#211342', '#160B2E']} >
+        <View style={{ flex: 1 }}>
+            <LinearGradient style={{ backgroundColor: '#3D4957' }} colors={['#3B2860', '#211342', '#160B2E']} >
                 <VictoryLine
                     style={{
                         data: { stroke: "#FF3D68" },
-                        parent: { border: "1px solid #ccc" }
+                        parent: { border: "1px solid #ccc" },
                     }}
                     data={[
                         { x: -2, y: 12 },
@@ -30,6 +30,7 @@ export default Health = (props) => {
                         { x: 12, y: 12 },
                         { x: 13, y: 12 },
                     ]}
+                    height={230}
                 />
                 <ListItem
                     leftAvatar={
@@ -54,7 +55,7 @@ export default Health = (props) => {
 
             </LinearGradient>
             <View
-                style={{ flex: 1, flexDirection: 'row' }}
+                style={{ flexDirection: 'row', flex: 1 }}
             >
                 <LinearGradient style={styles.footerContainer} colors={['#331E5F', '#231540']}>
                     <AnimatedCircularProgress
@@ -135,7 +136,7 @@ export default Health = (props) => {
                     </View>
                 </LinearGradient>
             </View>
-        </Fragment>
+        </View>
     )
 }
 const styles = StyleSheet.create({

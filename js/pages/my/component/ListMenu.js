@@ -23,23 +23,6 @@ export default ListMenu = (props) => {
             />
             <ListItem
                 leftAvatar={
-                    <Image source={require('../../../assets/icon/pages/my/shopping.png')} style={styles.leftIcon} />
-                }
-                title='我的有品'
-                titleStyle={styles.title}
-                rightAvatar={
-                    <Image
-                        source={
-                            require('../../../assets/icon/pages/my/right.png')
-                        }
-                        style={styles.rightIcon}
-                    />
-                }
-                containerStyle={styles.containerStyle}
-                Component={TouchableOpacity}
-            />
-            <ListItem
-                leftAvatar={
                     <Image source={require('../../../assets/icon/pages/my/other.png')} style={styles.leftIcon} />
                 }
                 title='其他平台设备'
