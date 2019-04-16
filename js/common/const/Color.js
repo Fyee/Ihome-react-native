@@ -6,5 +6,7 @@ export default Color = {
     HomeTitle: '#38363B',
     HomeSubTitle: '#8C8276',
     SpitLine: '#c6cbef',
-    imgBorderColor: '#fff'
+    imgBorderColor: '#fff',
+    DataPageEnvBackColor: '#053f5e',
+    DataPageCardBackColor: '#022c43'
 }

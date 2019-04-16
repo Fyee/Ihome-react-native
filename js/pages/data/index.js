@@ -4,6 +4,7 @@ import MyHeader from '../../common/component/header/MyHeader';
 import { Tab, Tabs } from 'native-base'
 import Env from './component/env'
 import Health from './component/health'
+import Color from '../../common/const/Color';
 export default class DataScreen extends Component {
     constructor(props) {
         super(props)
@@ -11,7 +12,7 @@ export default class DataScreen extends Component {
     }
     initState() {
         this.state = {
-            backgroundColor: '#09263B'
+            backgroundColor: Color.DataPageEnvBackColor
         }
     }
     render() {
@@ -34,7 +35,7 @@ export default class DataScreen extends Component {
                     onChangeTab={(tab) => {
                         if (tab.i === 0) {
                             this.setState({
-                                backgroundColor: '#09263B'
+                                backgroundColor: Color.DataPageEnvBackColor
                             })
                         }
                         if (tab.i === 1) {
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1 / PixelRatio.get(),
         borderRightWidth: 1 / PixelRatio.get(),
         borderColor: '#fff',
-        backgroundColor: '#09263B'
+        backgroundColor: Color.DataPageEnvBackColor
     },
     rightTabStyle: {
         borderBottomWidth: 1 / PixelRatio.get(),

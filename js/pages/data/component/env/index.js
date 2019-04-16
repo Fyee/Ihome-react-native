@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, Image, Dimensions, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, Dimensions, ScrollView } from 'react-native'
 import Bar from './component/Bar'
 import { AnimatedCircularProgress } from 'react-native-circular-progress'
 import ProgressWrapper from './component/ProgressWrapper'
 import { VictoryChart, VictoryLine, VictoryTheme } from 'victory-native'
+import Color from '../../../../common/const/Color';
 const temprature = require('../../../../assets/icon/pages/data/temprature.png')
 const air = require('../../../../assets/icon/pages/data/air.png')
 const record = require('../../../../assets/icon/pages/data/record.png')
@@ -42,8 +43,8 @@ const data = [
 ]
 export default Environment = (props) => {
     return (
-        <ScrollView style={{ flex: 1, backgroundColor: '#09263B' }}>
-            <View style={{ margin: 10, height: 200, backgroundColor: '#0B304A' }}>
+        <ScrollView style={{ flex: 1, backgroundColor: Color.DataPageEnvBackColor }}>
+            <View style={styles.cardItemWrapper}>
                 <Bar icon={temprature} backgroundColor='#218891' title='温度' />
                 {data.map((item) => {
                     return <ProgressWrapper
@@ -55,8 +56,8 @@ export default Environment = (props) => {
                     />
                 })}
             </View>
-            <View style={{ marginHorizontal: 10, height: 200, backgroundColor: '#0B304A' }}>
-                <Bar icon={air} backgroundColor='#6b8c42' title='空气' />
+            <View style={{ marginHorizontal: 10, height: 200, backgroundColor: Color.DataPageCardBackColor }}>
+                <Bar icon={air} backgroundColor='#7bc67b' title='空气' />
                 <View style={{ flexDirection: 'row', flex: 1 }}>
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                         <AnimatedCircularProgress
@@ -64,7 +65,7 @@ export default Environment = (props) => {
                             size={100}
                             width={10}
                             fill={80}
-                            tintColor="#6f0765"
+                            tintColor="#c54fa7"
                             onAnimationComplete={() => console.log('onAnimationComplete')}
                             backgroundColor="#4c0045" >
                             {
@@ -88,9 +89,9 @@ export default Environment = (props) => {
                             size={100}
                             width={10}
                             fill={20}
-                            tintColor="#15cda8"
+                            tintColor="#a7d129"
                             onAnimationComplete={() => console.log('onAnimationComplete')}
-                            backgroundColor="#01676b" >
+                            backgroundColor="#6b8c42" >
                             {
                                 (fill) => (
                                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -109,8 +110,8 @@ export default Environment = (props) => {
 
                 </View>
             </View>
-            <View style={{ margin: 10, height: 200, backgroundColor: '#0B304A' }}>
-                <Bar icon={record} backgroundColor='#a23131' title='历史' />
+            <View style={styles.cardItemWrapper}>
+                <Bar icon={record} backgroundColor='#dd6b4d' title='历史' />
                 <VictoryChart
                     theme={VictoryTheme.material}
                     height={160}
@@ -137,3 +138,11 @@ export default Environment = (props) => {
     )
 }
 const { width } = Dimensions.get('window')
+
+const styles = StyleSheet.create({
+    cardItemWrapper: {
+        margin: 10,
+        height: 200,
+        backgroundColor: Color.DataPageCardBackColor
+    }
+})
