@@ -11,7 +11,7 @@ export default MyBackHeader = (props) => {
                 </TouchableOpacity>
             }
             headerStyle={props.headerStyle}
-            center={<Text style={{ fontSize: 18, color: props.titleColor, fontWeight: 'bold' }}>{props.title}</Text>}
+            center={<Text style={{ fontSize: 16, color: props.titleColor, fontWeight: 'bold' }}>{props.title}</Text>}
             right={props.right}
         />
     )
