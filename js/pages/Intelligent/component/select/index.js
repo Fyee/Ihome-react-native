@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Text, SectionList, StyleSheet } from 'react-native'
+import { View, Image, Text, SectionList, StyleSheet, PixelRatio } from 'react-native'
 import MyBackHeader from '../../../../common/component/header/MyBackHeader'
 import { ListItem } from 'react-native-elements'
 import DividingLine from '../../../../common/component/DividingLine';
@@ -67,6 +67,11 @@ export default Select = (props) => {
             <DividingLine title={title} style={styles.DividingLineStyle} titleStyle={styles.DividingLineTitle} />
         )
     }
+    _separator = () => {
+        return <View
+            style={{ height: 1 / PixelRatio.get(), backgroundColor: '#DFDFDF', marginLeft: 60 }}
+        />
+    }
     return (
         <View
             style={{ flex: 1 }}
@@ -77,6 +82,7 @@ export default Select = (props) => {
                 renderItem={this._getItem}
                 keyExtractor={(item, index) => item.id}
                 renderSectionHeader={this._sectionHeader}
+                ItemSeparatorComponent={this._separator}
             />
         </View>
     )
