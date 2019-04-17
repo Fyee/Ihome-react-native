@@ -15,7 +15,7 @@ This app implemented by React Native,support android and ios,not use any api,jus
 
 ```
 git clone https://github.com/Fyee/Ihome-react-native.git
-cd ihome-react-native && yarn install
+cd Ihome-react-native && yarn install
 react-native link
 npx http-server ./js/static -p 8888
 ```
