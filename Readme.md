@@ -1,6 +1,6 @@
 # Ihome React Native
 [![React Native](https://img.shields.io/badge/react%20native-0.59.4-yellow.svg)](https://facebook.github.io/react-native)
-This app implemented by React Native,support android and ios,not use any api,just a UI display app.If you like this project plese give me a star.
+This app implemented by React Native,support android and ios,not use any api,just a UI display app.If you like this project please give me a star.
 # Dependencies
 * [react-native-elements](https://react-native-training.github.io/react-native-elements/)
 * [native-base](https://nativebase.io/)
