@@ -29,7 +29,7 @@ export default class AuthLoadingScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.textStyle}>技术支持 安徽肯曼科技</Text>
+                <Text style={styles.textStyle}>Fyee</Text>
             </View>
         );
     }
