@@ -27,6 +27,14 @@ Use [http-server](https://github.com/indexzero/http-server) to proxy image file(
 
 If you don't want proxy images file you can use remote ip address http://118.25.107.188:8888 to replace BaseUrl, but is not quickly ,so i recommend using http-sever to proxy static folder.
 # Screenshot
-
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/home.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/add_device.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/env.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/health.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/condition.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/intelligent.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/my.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/register.jpg)
+![](https://raw.githubusercontent.com/Fyee/Ihome-react-native/master/screenshot/setting.jpg)
 # License
 [MIT License](https://opensource.org/licenses/MIT)
