@@ -20,8 +20,8 @@ react-native link
 npx http-server ./js/static -p 8888
 ```
 
-IOS: I recommend using Xcode to open ios/ihome_v3.xcodeproj and build run.
-Android: I recommend using Android studio to open android folder.
+* IOS: I recommend using Xcode to open ios/ihome_v3.xcodeproj and build run.
+* Android: I recommend using Android studio to open android folder.
 
 Use [http-server](https://github.com/indexzero/http-server) to proxy image file(/js/static folder),if you want running on phone, update js/common/const/Consts.js BaseUrl={your proxy ip address and port},make sure your laptop and your phone are on the same Wi-Fi network.
 
